@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .item {
+      flex: 1;
+      padding: 20px;
+      background-color: #ddd;
+      margin: 5px;
+      text-align: center;
+    }
+
+    .greeting-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    button {
+      display: block;
+      margin: 10px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        background-color: #f0f0f0;
+      }
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Responsive Design Example</h1>
+  </header>
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+  </div>
+  <button id="changeColorButton">Change Background Color</button>
+
+  <div class="greeting-container">
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button id="greetButton">Greet</button>
+    <p id="greetingMessage"></p>
+  </div>
+
+  <script>
+    document.getElementById('changeColorButton').addEventListener('click', function() {
+      document.body.style.backgroundColor = '#d1e7dd';
+    });
+
+    function greet(name) {
+      return 'Hello, ' + name;
+    }
+
+    document.getElementById('greetButton').addEventListener('click', function() {
+      const name = document.getElementById('nameInput').value;
+      const greetingMessage = greet(name);
+      document.getElementById('greetingMessage').innerText = greetingMessage;
+    });
+  </script>
+</body>
+</html>

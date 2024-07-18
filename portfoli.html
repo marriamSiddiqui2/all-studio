@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+        }
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #2f1b48;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+    color: aquamarine;
+  font-size: 30;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+div {
+  padding: auto;
+  margin-bottom: 30px;
+  background: #fff;
+}
+
+footer {
+  background: #a23d3d;
+  color: #eee7e7;
+  text-align: center;
+  padding: 10px;
+}
+
+.project {
+  margin-bottom: 10px;
+}
+
+.project h3 {
+  margin-bottom: 10px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+  header nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+    </style>
+
+</head>
+<body>
+  <header>
+    <h1>MARRIAM SIDDIQUI</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container;">
+  <div id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate developer with expertise in HTML, CSS, and JavaScript.</p>
+  </div>
+  
+  <div id="project">
+    <h2>Projects:</h2>
+      <h3>Project 1</h3>
+      <p>launching clothing website</p>
+    </div>
+
+    <div class="projects">
+      <h3>Project 2:</h3>
+      <p>layout designing</p>
+    </div>
+  
+  <div id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Responsive Design</li>
+    </ul>
+</div>
+  
+  <div id="contact">
+    <h2>Contact</h2>
+    <p>Email: marr.iam@lala.com</p>
+    <p>Phone: 033123456</p>
+  </div>
+</div>
+  <footer>
+    <p>&copy; 2024 marr-iam</p>
+  </footer>
+</body>
+</html>

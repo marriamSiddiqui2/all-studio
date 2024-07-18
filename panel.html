@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drop-down Menu with Side Menu</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+  }
+
+  #sideMenu {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 200px;
+  }
+
+  select:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+</style>
+</head>
+<body>
+
+<select id="myDropdown" onchange="toggleSideMenu()">
+  <option value="none">Select an option</option>
+  <option value="all">All</option>
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+  <option value="option3">Option 3</option>
+  <!-- Add more options as needed -->
+</select>
+
+<div id="sideMenu">
+  <h2>Side Menu</h2>
+  <ul>
+    <li>Menu Item 1</li>
+    <li>Menu Item 2</li>
+    <li>Menu Item 3</li>
+    <!-- Add more menu items as needed -->
+  </ul>
+</div>
+
+<script>
+function toggleSideMenu() {
+  var dropdown = document.getElementById("myDropdown");
+  var sideMenu = document.getElementById("sideMenu");
+
+  if (dropdown.value === "all") {
+    sideMenu.style.display = "block";
+  } else {
+    sideMenu.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-logo img {
+    height: 50px;
+    width: 100px;
+}
+
+.header-search {
+    margin-left: 20px;
+}
+
+.header-links {
+    margin-left: 20px;
+}
+
+.header-links a {
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #666;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-box {
+    width: 300px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.product-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-box h2 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.product-box p {
+    font-size: 14px;
+    color: #666;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <a href="#">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.6sOw48FRBgnjbiMLDgRvNAHaEK&pid=Api&P=0&h=220" alt="Amazon Logo">
+            </a>
+        </div>
+        <div class="header-search">
+            <input type="text" placeholder="Search Amazon">
+            <button>&#128269;</button>
+        </div>
+        <div class="header-links">
+            <a href="#">Hello, Sign in</a>
+            <a href="#">Account & Lists</a>
+            <a href="#">Orders</a>
+            <a href="#">Cart</a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">ALL</a></li>
+            <li><a href="#">Today's Deal</a></li>
+            <li><a href="#">Buy Again</a></li>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Registry</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Sell</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <div class="container">
+                <img src="https://m.media-amazon.com/images/I/61okdP-S1HL._SX1500_.jpg" alt="Mother's Day">
+                <button class="button right-button" aria-label="Next Image">&#10140;</button>
+            </div>
+            <div class="product-box">
+                <h2>Deals in PCs</h2>
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v1._SY304_CB573698005_.jpg" alt="Product 1">
+                <p>show now</p>
+            </div>
+            <div class="product-box">
+                <h2>Refresh your space</h2>
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_LP-HP_B08MYX5Q2W_01.23._SY116_CB619238939_.jpg" alt="Product 2">
+                <p>see more</p>
+            </div>
+            <!--... -->
+        </section>
+    </main>
+    <footer>
+        <!--... -->
+    </footer>
+    <script>
+    let deliverToButton = document.querySelector('#deliverToButton');
+deliverToButton.addEventListener('click', inputdata);
+
+function inputdata() {
+    let cityname = prompt('ENTER COUNTRY');
+}
+   </script>
+</body>
+</html>

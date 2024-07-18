@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st tut</title>
+
+</head>
+<body>
+    <button>ROLL no1= marriam</button>
+
+    <script> 
+    let rolln= document.querySelector('button'); 
+    rolln.addEventListener('click', inputdata);
+    function inputdata(){
+        let name = prompt('ENTER NAME');
+        rolln.textContent= 'ROLL no1=' + name; 
+
+    }
+</script>
+</body>
+</html>

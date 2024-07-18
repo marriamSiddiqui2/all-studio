@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .image-container {
+  position: relative;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  background-image: url('https://www.apple.com/v/airpods/v/images/overview/airpods_%203%20rd_gen__dhy%205%20bknhvtqq_large%20.%20jpg'); 
+  background-size: cover; 
+  background-position: center; 
+}
+
+.image-container img {
+  max-width: 100%;
+  z-index: 1; 
+}
+
+.image-container img:first-child {
+  margin-right: 20px; 
+}
+
+.image-container img:last-child {
+  margin-left: 20px; 
+}
+
+    </style>
+</head>
+<body>
+    <div >
+        <img src="https://www.apple.com/v/airpods/v/images/overview/airpods_3rd_gen__dhy5bknhvtqq_large.jpg" alt="imm">
+    </div>
+        <div class="image-container">
+            <div class="background-image"></div>
+            <img src="https://www.apple.com/v/airpods/v/images/overview/airpods_2ndgen_left__gjpt8k836yy6_large.png" alt="Image 1">
+            <img src="https://www.apple.com/v/airpods/v/images/overview/airpods_2ndgen_right__gahfggwvcx6q_large.png" alt="Image 2">
+          </div>
+</body>
+</html>
